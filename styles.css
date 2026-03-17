@@ -1,4 +1,14 @@
 body {
 background-color:bisque;
 font-size: x-large;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1/3;
 }
