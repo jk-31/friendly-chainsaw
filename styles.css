@@ -203,31 +203,27 @@ box-shadow: 0px 10px 6px black;
   margin-bottom: 30px;
 }
 
-.con-icon1 {
+.con-icon1, .con-icon2 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  transition: transform 0.2s ease-in-out;
+  transform: scale(1); 
+  box-shadow: 0px 0px 0px transparent; 
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   cursor: pointer; 
 }
 
 .con-icon1:hover {
   transform: scale(1.1);
- 
+  position: relative;
+  z-index: 10;
 }
 
-
-.con-icon2 {
-  display: flex;
-  flex-direction: column;
-  grid-template-columns: 1fr;
-  justify-content: space-evenly;
-  transition: transform 0.2s ease-in-out;
-  cursor: pointer; 
-}
 
 .con-icon2:hover {
   transform: scale(1.1);
+  position: relative;
+  z-index: 10;
 }
 
 
